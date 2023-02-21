@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    
+}
+section{
+    
+    border: 3px dotted black;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.ranking{
+    background-color: gold;
+}
