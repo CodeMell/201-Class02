@@ -5,11 +5,11 @@ let answer4 = "";
 let answer5 = "";
 
 function test() {
-    answer1 = prompt("my name rena");
-    answer2 = prompt(" I play sims");
-    answer3 = prompt("I watch live act");
-    answer4 = prompt("I have a fatbike");
-    answer5 = prompt("I want to make a cake");
+    answer1.toLocaleLowerCase = prompt("my name rena");
+    answer2.toLocaleLowerCase = prompt(" I play sims");
+    answer3.toLocaleLowerCase = prompt("I watch live act");
+    answer4.toLocaleLowerCase = prompt("I have a fatbike");
+    answer5.toLocaleLowerCase = prompt("I want to make a cake");
     if(answer1 !== "y"){
         alert("nope");
        
