@@ -57,3 +57,19 @@ function test() {
     
 }
 
+let username = "";
+
+function signin() {
+    username = prompt("Username?");
+    if(username != ''){
+        alert("Hello, " + username);
+        document.getElementById("user").innerHTML = " (￣︶￣) " + username;
+    } 
+    else {
+        alert('Iniviled User');
+        document.getElementById("user").innerHTML = " (T-T)";
+    }
+    
+}
+
+signin();
