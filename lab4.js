@@ -47,11 +47,9 @@ function test() {
 }
 
 function qust6(){
-    let tries = 4;
-    let answerRight = false;
+    
 
-    while(tries > 0){
-        answer6 = prompt("Pick a number between 1 and 10");
+    answer6 = prompt("Pick a number between 1 and 10");
 
     while(answer6 != 4){
         if(answer6 < 4){
@@ -62,14 +60,16 @@ function qust6(){
             answer6 = prompt("number between 1 and 10");
         }
     }
-    }
-
-    
     alert(" (/*￣︶￣)/ you did it \(￣︶￣*\) ");
 }
 
 function qust7(){
-    
+    let tries = 4;
+    let answerRight = false;
+
+    while(tries > 0){
+        
+    }
 }
 
 let username = "";
