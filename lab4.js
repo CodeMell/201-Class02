@@ -71,7 +71,7 @@ function signin() {
     username = prompt("Username?");
     if(username != ''){
         alert("Hello, " + username);
-        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username.toLocaleLowerCase;
+        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username.toLocaleLowerCase();
     } 
     else {
         alert('Iniviled User');
