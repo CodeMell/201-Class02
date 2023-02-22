@@ -6,11 +6,11 @@ let answer5 = "";
 
 
 function test() {
-    answer1.toLocaleLowerCase() = prompt("my name rena   (y/n)");
-    answer2.toLocaleLowerCase() = prompt(" I play sims   (y/n)");
-    answer3.toLocaleLowerCase() = prompt("I watch live act   (y/n)");
-    answer4.toLocaleLowerCase() = prompt("I have a fatbike   (y/n)");
-    answer5.toLocaleLowerCase() = prompt("I want to make a cake   (y/n)");
+    answer1 = prompt("my name rena   (y/n)");
+    answer2 = prompt(" I play sims   (y/n)");
+    answer3 = prompt("I watch live act   (y/n)");
+    answer4 = prompt("I have a fatbike   (y/n)");
+    answer5 = prompt("I want to make a cake   (y/n)");
     
     if(answer1 !== "y"){
         alert("nope Im Rena");
@@ -47,7 +47,11 @@ function test() {
 }
 
 function qust6(){
-    answer6 = prompt("Pick a number between 1 and 10");
+    let tries = 4;
+    let answerRight = false;
+
+    while(tries > 0){
+        answer6 = prompt("Pick a number between 1 and 10");
 
     while(answer6 != 4){
         if(answer6 < 4){
@@ -58,6 +62,9 @@ function qust6(){
             answer6 = prompt("number between 1 and 10");
         }
     }
+    }
+
+    
     alert(" (/*￣︶￣)/ you did it \(￣︶￣*\) ");
 }
 
@@ -71,7 +78,7 @@ function signin() {
     username = prompt("Username?");
     if(username != ''){
         alert("Hello, " + username);
-        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username;
+        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username.toLocaleLowerCase();
     } 
     else {
         alert('Iniviled User');
