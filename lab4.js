@@ -12,47 +12,28 @@ function test() {
     answer5.toLocaleLowerCase = prompt("I want to make a cake");
     if(answer1 !== "y"){
         alert("nope");
-       
-    }
-    else{
+    }else{
         alert("good");
-        
     }
-
     if(answer2 !== "n"){
         alert("nope");
-       
-    }
-    else{
+    }else{
         alert("good");
-        
     }
-
     if(answer3 !== "n "){
         alert("nope");
-       
-    }
-    else{
+    }else{
         alert("good");
-        
     }
-    
     if(answer4 !== "y"){
         alert("nope");
-       
-    }
-    else{
+    }else{
         alert("good");
-        
     }
-
     if(answer5 !== "n"){
         alert("nope");
-       
-    }
-    else{
+    }else{
         alert("good");
-        
     }
     
 }
