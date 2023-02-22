@@ -6,11 +6,11 @@ let answer5 = "";
 
 
 function test() {
-    answer1.toLocaleLowerCase = prompt("my name rena   (y/n)");
-    answer2.toLocaleLowerCase = prompt(" I play sims   (y/n)");
-    answer3.toLocaleLowerCase = prompt("I watch live act   (y/n)");
-    answer4.toLocaleLowerCase = prompt("I have a fatbike   (y/n)");
-    answer5.toLocaleLowerCase = prompt("I want to make a cake   (y/n)");
+    answer1 = prompt("my name rena   (y/n)");
+    answer2 = prompt(" I play sims   (y/n)");
+    answer3 = prompt("I watch live act   (y/n)");
+    answer4 = prompt("I have a fatbike   (y/n)");
+    answer5 = prompt("I want to make a cake   (y/n)");
     
     if(answer1 !== "y"){
         alert("nope Im Rena");
@@ -61,7 +61,9 @@ function qust6(){
     alert(" (/*￣︶￣)/ you did it \(￣︶￣*\) ");
 }
 
+function qust7(){
 
+}
 
 let username = "";
 
@@ -69,7 +71,7 @@ function signin() {
     username = prompt("Username?");
     if(username != ''){
         alert("Hello, " + username);
-        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username;
+        document.getElementById("user").innerHTML = " (￣︶￣) WELCOME " + username.toLocaleLowerCase;
     } 
     else {
         alert('Iniviled User');
