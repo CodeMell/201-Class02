@@ -5,35 +5,35 @@ let answer4 = "";
 let answer5 = "";
 
 function test() {
-    answer1.toLocaleLowerCase = prompt("my name rena");
-    answer2.toLocaleLowerCase = prompt(" I play sims");
-    answer3.toLocaleLowerCase = prompt("I watch live act");
-    answer4.toLocaleLowerCase = prompt("I have a fatbike");
-    answer5.toLocaleLowerCase = prompt("I want to make a cake");
+    answer1.toLocaleLowerCase = prompt("my name rena (y\n)");
+    answer2.toLocaleLowerCase = prompt(" I play sims (y\n)");
+    answer3.toLocaleLowerCase = prompt("I watch live act (y\n)");
+    answer4.toLocaleLowerCase = prompt("I have a fatbike (y\n)");
+    answer5.toLocaleLowerCase = prompt("I want to make a cake (y\n)");
     if(answer1 !== "y"){
-        alert("nope");
+        alert("nope Im Rena");
     }else{
-        alert("good");
+        alert("Ya Im rena");
     }
     if(answer2 !== "n"){
-        alert("nope");
+        alert("I don't play sims");
     }else{
-        alert("good");
+        alert("It show time!");
     }
     if(answer3 !== "n "){
-        alert("nope");
+        alert("Im not big on live action");
     }else{
-        alert("good");
+        alert("Animations are cooler");
     }
     if(answer4 !== "y"){
-        alert("nope");
+        alert("nope i have a fatbike");
     }else{
-        alert("good");
+        alert("I love my ebike");
     }
     if(answer5 !== "n"){
-        alert("nope");
+        alert("nope im a lazy cook");
     }else{
-        alert("good");
+        alert("Its my dream job");
     }
     
 }
