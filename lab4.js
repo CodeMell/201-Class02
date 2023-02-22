@@ -97,7 +97,9 @@ function qust7(){
 }
 
 function ranking(){
-
+    for(let x = 0; x <= userAW.length(); x += 1){
+        document.getElementById("rank").innerHTML += "#" ;
+    }
 }
 
 let username = "";
