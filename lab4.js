@@ -60,15 +60,28 @@ function qust6(){
             answer6 = prompt("number between 1 and 10");
         }
     }
-    alert(" (/*￣︶￣)/ you did it \(￣︶￣*\) ");
+    alert(" (/*￣︶￣)/ you did it (￣︶￣) ");
+    qust7();
 }
+let answer7 ="a";
 
 function qust7(){
     let tries = 4;
     let answerRight = false;
 
     while(tries > 0){
-        
+        const Uanswer7 = prompt("answer:")
+        if(Uanswer7 == null){
+            break;
+        }else if(Uanswer7 == answer7){
+            answerRight = true;
+            alert("Goodjod")
+            break;
+        }
+        tries --;
+    }
+    if(!answerRight){
+        alert('You out of tries!');
     }
 }
 
