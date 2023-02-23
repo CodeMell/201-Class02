@@ -105,6 +105,7 @@ function ranking(){
             grade ++ ;
         }    
     }
+    document.getElementById("qustDone").style.visibility="hidden";
     document.getElementById("rank").innerHTML += "You got " + grade + " out of " + trueAW.length ;
 }
 
