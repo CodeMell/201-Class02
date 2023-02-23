@@ -3,7 +3,7 @@ let answer2 = "";
 let answer3 = "";
 let answer4 = "";
 let answer5 = "";
-let trueAW = [ "y","n","n","y","n",4,"a"];
+const trueAW = [ "y","n","n","y","n",4,"a"];
 let userAW = [];
 
 
@@ -73,14 +73,14 @@ function qust6(){
     alert(" (/*￣︶￣)/ you did it");
     qust7();
 }
-let answer7 ="a";
+let answer7 ="c";
 
 function qust7(){
     let tries = 4;
     let answerRight = false;
 
     while(tries > 0){
-        const Uanswer7 = prompt("answer:")
+        const Uanswer7 = prompt("What quote is real? :")
         userAW.push(Uanswer7);
         if(Uanswer7 == null){
             break;
@@ -94,16 +94,18 @@ function qust7(){
     if(!answerRight){
         alert('You out of tries!');
     }
+    ranking();
 }
 
-function grade(){
-    
-}
 
 function ranking(){
-    for(let x = 0; x <= userAW.length(); x += 1){
-        document.getElementById("rank").innerHTML += "#" ;
+    let grade = 0;
+    for(let x = 0; x < userAW.length; x++){
+        if(userAW[x] === trueAW[x]){
+            grade ++ ;
+        }    
     }
+    document.getElementById("rank").innerHTML += "You got " + grade + " out of " + trueAW.length ;
 }
 
 let username = "";
