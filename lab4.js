@@ -96,6 +96,10 @@ function qust7(){
     }
 }
 
+function grade(){
+    
+}
+
 function ranking(){
     for(let x = 0; x <= userAW.length(); x += 1){
         document.getElementById("rank").innerHTML += "#" ;
